@@ -1,12 +1,12 @@
 import { Container } from "@mui/material";
-import { LoginForm } from "../../features/auth/ui/LoginForm";
+import { AuthForm } from "../../features/auth/ui/AuthForm";
 
 type Props = {};
 
-export default function LoginPage({}: Props) {
+export const AuthPage = (props: Props) => {
   return (
-    <Container maxWidth="xs" sx={{ mt: 10 }}>
-      <LoginForm />
-    </Container>
+    <div >
+      <AuthForm />
+    </div>
   );
-}
+};
