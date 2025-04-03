@@ -1,6 +1,7 @@
 import axios from 'axios';
-import { store } from '../../store/store';
+// import { store } from '../../store/store';
 import { logout } from '../../features/auth/model/authSlice';
+import { store } from '../../app/store/store';
 
 const BASE_URL = 'https://auth.stg.corp.1440.space/realms/empaas/protocol/openid-connect';
 

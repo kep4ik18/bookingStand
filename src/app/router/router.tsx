@@ -1,9 +1,14 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { Layout } from '../app/Layout';
-import { LoginPage } from '../pages/LoginPage';
-import { BookingPage } from '../pages/BookingPage';
-import { NotFoundPage } from '../pages/NotFoundPage';
-import { ProtectedRoute } from '../shared/lib/ProtectedRoute';
+
+
+
+
+import { LoginPage } from '../../pages/login/LoginPage';
+import { ProtectedRoute } from './ProtectedRouter';
+import { Layout } from '../../pages/layout';
+import NotFoundPage from '../../pages/NotFoundPage/NotFoundPage';
+import MainPage from '../../pages/main/MainPage';
+
 
 export const router = createBrowserRouter([
   {
@@ -16,7 +21,7 @@ export const router = createBrowserRouter([
         children: [
           {
             path: '/',
-            element: <BookingPage />,
+            element: <MainPage />,
           },
         ],
       },
@@ -26,7 +31,7 @@ export const router = createBrowserRouter([
       },
       {
         path: '*',
-        element: <NotFoundPage />,
+        element: <NotFoundPage/>,
       },
     ],
   },

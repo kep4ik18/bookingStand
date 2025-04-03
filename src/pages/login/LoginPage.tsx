@@ -1,9 +1,6 @@
-import { Container } from "@mui/material";
 import { AuthForm } from "../../features/auth/ui/AuthForm";
 
-type Props = {};
-
-export const AuthPage = (props: Props) => {
+export const LoginPage = () => {
   return (
     <div >
       <AuthForm />
