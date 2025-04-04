@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { login } from '../model/authSlice';
 
 import { Button, TextField, Box, Typography, CircularProgress } from '@mui/material';
@@ -25,10 +25,10 @@ export const AuthForm = () => {
   return (
     <Box component="form" onSubmit={handleSubmit} sx={{ maxWidth: 400, mx: 'auto', mt: 4 }}>
       <Typography variant="h5" gutterBottom>
-        Вход
+        Добро пожаловать в сервис стендов
       </Typography>
       <TextField
-        label="Имя пользователя"
+        label="Корпаративная почта или логин"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
         fullWidth
